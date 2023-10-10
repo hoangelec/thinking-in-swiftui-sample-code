@@ -26,7 +26,8 @@ struct Knob: View {
     @Binding var value: Double // should be between 0 and 1
 
     var body: some View {
-         KnobShape()
+        print("Knob")
+        return KnobShape()
             .fill(Color.primary)
             .rotationEffect(Angle(degrees: value * 330))
             .onTapGesture {
@@ -40,11 +41,23 @@ struct Knob: View {
 struct ContentView: View {
     @State var volume: Double = 0.5
     var body: some View {
-    VStack {
-        Knob(value: $volume)
-    .frame(width: 100, height: 100)
-        Slider(value: $volume, in: (0...1))
-    }
+        print("ContentView")
+        return VStack {
+
+            Knob(value: $volume)
+                .frame(width: 100, height: 100)
+
+            // This button has a visual binding with `volume`, changes of `volume` will cause ContentView to redraw
+            Button("Title: \(volume)") {
+                volume += 0.1
+            }
+
+            // This button doesn't have a visual binding with `volume`, thus change of `volume` won't cause ContentView to redraw
+            Button("Title:") {
+                volume += 0.1
+            }
+
+        }
 
     }
 }
