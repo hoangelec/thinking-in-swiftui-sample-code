@@ -43,12 +43,18 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Knob(value: $value)
-                .frame(width: 100, height: 100)
+            Spacer()
+            Group {
+                Knob(value: $value)
+                    .frame(width: 1000 * knobSize, height: 1000 * knobSize)
+            }
+            .frame(width: 400, height: 400)
+            Spacer()
             HStack {
                 Text("Value")
                 Slider(value: $value, in: 0...1)
             }
+
             HStack {
                 Text("Knob Size")
                 Slider(value: $knobSize, in: 0...0.4)
