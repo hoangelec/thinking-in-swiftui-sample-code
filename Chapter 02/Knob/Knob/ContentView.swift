@@ -38,33 +38,14 @@ struct Knob: View {
 }
 
 struct ContentView: View {
-    @State var value: Double = 0.5
-    @State var knobSize: CGFloat = 0.1
-
+    @State var volume: Double = 0.5
     var body: some View {
-        VStack {
-            Spacer()
-            Group {
-                Knob(value: $value)
-                    .frame(width: 1000 * knobSize, height: 1000 * knobSize)
-            }
-            .frame(width: 400, height: 400)
-            Spacer()
-            HStack {
-                Text("Value")
-                Slider(value: $value, in: 0...1)
-            }
+    VStack {
+        Knob(value: $volume)
+    .frame(width: 100, height: 100)
+        Slider(value: $volume, in: (0...1))
+    }
 
-            HStack {
-                Text("Knob Size")
-                Slider(value: $knobSize, in: 0...0.4)
-            }
-            Button("Toggle", action: {
-                withAnimation(.default) {
-                    self.value = self.value == 0 ? 1 : 0
-                }
-            })
-        }
     }
 }
 
