@@ -48,16 +48,29 @@ fileprivate enum PointerSizeKey: EnvironmentKey {
     static let defaultValue: CGFloat = 0.3
 }
 
+fileprivate enum KnobHueKey: EnvironmentKey {
+    static let defaultValue: CGFloat? = nil
+}
+
 extension EnvironmentValues {
     var knobPointerSize: CGFloat {
         get { self[PointerSizeKey.self] }
         set { self[PointerSizeKey.self] = newValue }
+    }
+
+    var knobHue: CGFloat? {
+        get { self[KnobHueKey.self] }
+        set { self[KnobHueKey.self] = newValue }
     }
 }
 
 extension View {
     func knobPointerSize(_ size: CGFloat) -> some View {
         self.environment(\.knobPointerSize, size)
+    }
+
+    func knobHue(_ hue: CGFloat) -> some View {
+        self.environment(\.knobHue, hue)
     }
 }
 
@@ -67,12 +80,21 @@ struct Knob: View {
     @Environment(\.knobPointerSize) var envPointerSize
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.aEnvironment) var a
+    @Environment(\.knobHue) var envKnobHue
 
+    private var knobFillColor: Color {
+        if let envKnobHue {
+            return Color(hue: envKnobHue, saturation: 1, brightness: 1)
+        } else {
+            let schemeColor = colorScheme == .dark ? Color.white : .black
+            return schemeColor
+        }
+    }
 
     var body: some View {
         ZStack {
             KnobShape(pointerSize: pointerSize ?? envPointerSize)
-               .fill(colorScheme == .dark ? Color.white : .black)
+               .fill(knobFillColor)
                .rotationEffect(Angle(degrees: value * 330))
                .onTapGesture {
                    withAnimation(.default) {
@@ -89,13 +111,16 @@ struct Knob: View {
 struct ContentView: View {
     @State var value: Double = 0.5
     @State var knobSize: CGFloat = 0.2
+    @State var knobHue: CGFloat = 0
     @Environment(\.aEnvironment) var a
 
     var body: some View {
         VStack {
             Knob(value: $value)
                 .frame(width: 100, height: 100)
-//                .knobPointerSize(knobSize)
+                .knobPointerSize(knobSize)
+                .knobHue(knobHue)
+
             HStack {
                 Text("Value: \(a.int)")
                 Slider(value: $value, in: 0...1)
@@ -104,6 +129,12 @@ struct ContentView: View {
                 Text("Knob Size")
                 Slider(value: $knobSize, in: 0...0.4)
             }
+
+            HStack {
+                Text("Knob hue")
+                Slider(value: $knobHue, in: 0...0.8)
+            }
+
             Button("Toggle", action: {
                 withAnimation(.default) {
                     value = value == 0 ? 1 : 0
