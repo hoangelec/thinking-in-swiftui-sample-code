@@ -11,16 +11,17 @@ import SwiftUI
 struct Collapsible<Element, Content: View>: View {
     var data: [Element]
     var expanded: Bool = false
-    var spacing: CGFloat? = 8
-    var alignment: VerticalAlignment = .center
-    var collapsedWidth: CGFloat = 10
+    var spacing: CGFloat? = 5
+    var alignment: VerticalAlignment = .bottom
+    var collapsedWidth: CGFloat = 20
     var content: (Element) -> Content
 
     func child(at index: Int) -> some View {
         let showExpanded = expanded || index == self.data.endIndex - 1
         return content(data[index])
            .frame(width: showExpanded ? nil : collapsedWidth,
-                  alignment: Alignment(horizontal: .leading, vertical: alignment))
+                  alignment: Alignment(horizontal: .leading, vertical: alignment)
+        )
     }
 
     var body: some View {
@@ -37,9 +38,9 @@ struct ContentView: View {
         VStack {
             HStack {
                 Collapsible(data: colors, expanded: expanded) { (item: (Color, CGFloat)) in
-                    Rectangle()
+                    Capsule()
                         .fill(item.0)
-                        .frame(width: item.1, height: item.1)
+                        .frame(width: item.1, height: item.1 * 2)
                 }
             }
             Button(action: { withAnimation(.default) {

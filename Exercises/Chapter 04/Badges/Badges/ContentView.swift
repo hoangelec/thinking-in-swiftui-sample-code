@@ -21,7 +21,7 @@ extension View {
 struct ContentView: View {
     var body: some View {
         Text("Hello")
-            .padding(10)
+//            .padding(10)
             .background(Color.gray)
             .badge(count: 5)
     }
