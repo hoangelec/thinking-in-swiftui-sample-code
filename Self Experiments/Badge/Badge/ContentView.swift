@@ -18,7 +18,6 @@ struct Badge: View {
                         .fill(.red)
                         .frame(width: badgeSize, height: badgeSize)
                     Text("\(value < 10 ? "\(value)" : "10+" )")
-
                         .foregroundColor(.white)
                         .font(.footnote)
                         .bold()
@@ -53,5 +52,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(\.layoutDirection, .rightToLeft)
     }
 }
