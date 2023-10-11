@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CF59EED2AD52C4C004A56F1 /* ImageLoadingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF59EEC2AD52C4C004A56F1 /* ImageLoadingApp.swift */; };
-		5CF59EEF2AD52C4C004A56F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF59EEE2AD52C4C004A56F1 /* ContentView.swift */; };
-		5CF59EF12AD52C4D004A56F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF59EF02AD52C4D004A56F1 /* Assets.xcassets */; };
-		5CF59EF42AD52C4D004A56F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF59EF32AD52C4D004A56F1 /* Preview Assets.xcassets */; };
-		5CF59EFC2AD52C89004A56F1 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF59EFB2AD52C89004A56F1 /* ImageModel.swift */; };
-		5CF59F002AD52ED5004A56F1 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF59EFF2AD52ED5004A56F1 /* ImageListView.swift */; };
+		5C13A20A2AD67C7A0020BD07 /* SwiftUILayoutExperimentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13A2092AD67C7A0020BD07 /* SwiftUILayoutExperimentsApp.swift */; };
+		5C13A20C2AD67C7A0020BD07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13A20B2AD67C7A0020BD07 /* ContentView.swift */; };
+		5C13A20E2AD67C7A0020BD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C13A20D2AD67C7A0020BD07 /* Assets.xcassets */; };
+		5C13A2112AD67C7A0020BD07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C13A2102AD67C7A0020BD07 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5CF59EE92AD52C4C004A56F1 /* ImageLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CF59EEC2AD52C4C004A56F1 /* ImageLoadingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingApp.swift; sourceTree = "<group>"; };
-		5CF59EEE2AD52C4C004A56F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5CF59EF02AD52C4D004A56F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5CF59EF32AD52C4D004A56F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5CF59EFB2AD52C89004A56F1 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
-		5CF59EFF2AD52ED5004A56F1 /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		5C13A2062AD67C7A0020BD07 /* SwiftUILayoutExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayoutExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C13A2092AD67C7A0020BD07 /* SwiftUILayoutExperimentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayoutExperimentsApp.swift; sourceTree = "<group>"; };
+		5C13A20B2AD67C7A0020BD07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C13A20D2AD67C7A0020BD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C13A2102AD67C7A0020BD07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5CF59EE62AD52C4C004A56F1 /* Frameworks */ = {
+		5C13A2032AD67C7A0020BD07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,95 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5CF59EE02AD52C4C004A56F1 = {
+		5C13A1FD2AD67C7A0020BD07 = {
 			isa = PBXGroup;
 			children = (
-				5CF59EEB2AD52C4C004A56F1 /* ImageLoading */,
-				5CF59EEA2AD52C4C004A56F1 /* Products */,
+				5C13A2082AD67C7A0020BD07 /* SwiftUILayoutExperiments */,
+				5C13A2072AD67C7A0020BD07 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5CF59EEA2AD52C4C004A56F1 /* Products */ = {
+		5C13A2072AD67C7A0020BD07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CF59EE92AD52C4C004A56F1 /* ImageLoading.app */,
+				5C13A2062AD67C7A0020BD07 /* SwiftUILayoutExperiments.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5CF59EEB2AD52C4C004A56F1 /* ImageLoading */ = {
+		5C13A2082AD67C7A0020BD07 /* SwiftUILayoutExperiments */ = {
 			isa = PBXGroup;
 			children = (
-				5CF59EFE2AD52E99004A56F1 /* Views */,
-				5CF59EFA2AD52C72004A56F1 /* DataModel */,
-				5CF59EEC2AD52C4C004A56F1 /* ImageLoadingApp.swift */,
-				5CF59EF02AD52C4D004A56F1 /* Assets.xcassets */,
-				5CF59EF22AD52C4D004A56F1 /* Preview Content */,
+				5C13A2092AD67C7A0020BD07 /* SwiftUILayoutExperimentsApp.swift */,
+				5C13A20B2AD67C7A0020BD07 /* ContentView.swift */,
+				5C13A20D2AD67C7A0020BD07 /* Assets.xcassets */,
+				5C13A20F2AD67C7A0020BD07 /* Preview Content */,
 			);
-			path = ImageLoading;
+			path = SwiftUILayoutExperiments;
 			sourceTree = "<group>";
 		};
-		5CF59EF22AD52C4D004A56F1 /* Preview Content */ = {
+		5C13A20F2AD67C7A0020BD07 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5CF59EF32AD52C4D004A56F1 /* Preview Assets.xcassets */,
+				5C13A2102AD67C7A0020BD07 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		5CF59EFA2AD52C72004A56F1 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-				5CF59EFB2AD52C89004A56F1 /* ImageModel.swift */,
-			);
-			path = DataModel;
-			sourceTree = "<group>";
-		};
-		5CF59EFE2AD52E99004A56F1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5CF59EEE2AD52C4C004A56F1 /* ContentView.swift */,
-				5CF59EFF2AD52ED5004A56F1 /* ImageListView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CF59EE82AD52C4C004A56F1 /* ImageLoading */ = {
+		5C13A2052AD67C7A0020BD07 /* SwiftUILayoutExperiments */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CF59EF72AD52C4D004A56F1 /* Build configuration list for PBXNativeTarget "ImageLoading" */;
+			buildConfigurationList = 5C13A2142AD67C7A0020BD07 /* Build configuration list for PBXNativeTarget "SwiftUILayoutExperiments" */;
 			buildPhases = (
-				5CF59EE52AD52C4C004A56F1 /* Sources */,
-				5CF59EE62AD52C4C004A56F1 /* Frameworks */,
-				5CF59EE72AD52C4C004A56F1 /* Resources */,
+				5C13A2022AD67C7A0020BD07 /* Sources */,
+				5C13A2032AD67C7A0020BD07 /* Frameworks */,
+				5C13A2042AD67C7A0020BD07 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ImageLoading;
-			productName = ImageLoading;
-			productReference = 5CF59EE92AD52C4C004A56F1 /* ImageLoading.app */;
+			name = SwiftUILayoutExperiments;
+			productName = SwiftUILayoutExperiments;
+			productReference = 5C13A2062AD67C7A0020BD07 /* SwiftUILayoutExperiments.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5CF59EE12AD52C4C004A56F1 /* Project object */ = {
+		5C13A1FE2AD67C7A0020BD07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					5CF59EE82AD52C4C004A56F1 = {
+					5C13A2052AD67C7A0020BD07 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 5CF59EE42AD52C4C004A56F1 /* Build configuration list for PBXProject "ImageLoading" */;
+			buildConfigurationList = 5C13A2012AD67C7A0020BD07 /* Build configuration list for PBXProject "SwiftUILayoutExperiments" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 5CF59EE02AD52C4C004A56F1;
-			productRefGroup = 5CF59EEA2AD52C4C004A56F1 /* Products */;
+			mainGroup = 5C13A1FD2AD67C7A0020BD07;
+			productRefGroup = 5C13A2072AD67C7A0020BD07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CF59EE82AD52C4C004A56F1 /* ImageLoading */,
+				5C13A2052AD67C7A0020BD07 /* SwiftUILayoutExperiments */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5CF59EE72AD52C4C004A56F1 /* Resources */ = {
+		5C13A2042AD67C7A0020BD07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CF59EF42AD52C4D004A56F1 /* Preview Assets.xcassets in Resources */,
-				5CF59EF12AD52C4D004A56F1 /* Assets.xcassets in Resources */,
+				5C13A2112AD67C7A0020BD07 /* Preview Assets.xcassets in Resources */,
+				5C13A20E2AD67C7A0020BD07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CF59EE52AD52C4C004A56F1 /* Sources */ = {
+		5C13A2022AD67C7A0020BD07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CF59F002AD52ED5004A56F1 /* ImageListView.swift in Sources */,
-				5CF59EEF2AD52C4C004A56F1 /* ContentView.swift in Sources */,
-				5CF59EFC2AD52C89004A56F1 /* ImageModel.swift in Sources */,
-				5CF59EED2AD52C4C004A56F1 /* ImageLoadingApp.swift in Sources */,
+				5C13A20C2AD67C7A0020BD07 /* ContentView.swift in Sources */,
+				5C13A20A2AD67C7A0020BD07 /* SwiftUILayoutExperimentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5CF59EF52AD52C4D004A56F1 /* Debug */ = {
+		5C13A2122AD67C7A0020BD07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		5CF59EF62AD52C4D004A56F1 /* Release */ = {
+		5C13A2132AD67C7A0020BD07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,14 +259,14 @@
 			};
 			name = Release;
 		};
-		5CF59EF82AD52C4D004A56F1 /* Debug */ = {
+		5C13A2152AD67C7A0020BD07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageLoading/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILayoutExperiments/Preview Content\"";
 				DEVELOPMENT_TEAM = 4GCFEN9R7L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cap.mike.ImageLoading;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cap.mike.SwiftUILayoutExperiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		5CF59EF92AD52C4D004A56F1 /* Release */ = {
+		5C13A2162AD67C7A0020BD07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ImageLoading/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILayoutExperiments/Preview Content\"";
 				DEVELOPMENT_TEAM = 4GCFEN9R7L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -333,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cap.mike.ImageLoading;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cap.mike.SwiftUILayoutExperiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5CF59EE42AD52C4C004A56F1 /* Build configuration list for PBXProject "ImageLoading" */ = {
+		5C13A2012AD67C7A0020BD07 /* Build configuration list for PBXProject "SwiftUILayoutExperiments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CF59EF52AD52C4D004A56F1 /* Debug */,
-				5CF59EF62AD52C4D004A56F1 /* Release */,
+				5C13A2122AD67C7A0020BD07 /* Debug */,
+				5C13A2132AD67C7A0020BD07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CF59EF72AD52C4D004A56F1 /* Build configuration list for PBXNativeTarget "ImageLoading" */ = {
+		5C13A2142AD67C7A0020BD07 /* Build configuration list for PBXNativeTarget "SwiftUILayoutExperiments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CF59EF82AD52C4D004A56F1 /* Debug */,
-				5CF59EF92AD52C4D004A56F1 /* Release */,
+				5C13A2152AD67C7A0020BD07 /* Debug */,
+				5C13A2162AD67C7A0020BD07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5CF59EE12AD52C4C004A56F1 /* Project object */;
+	rootObject = 5C13A1FE2AD67C7A0020BD07 /* Project object */;
 }
