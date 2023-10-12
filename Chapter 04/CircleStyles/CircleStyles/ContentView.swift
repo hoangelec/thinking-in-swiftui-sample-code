@@ -9,6 +9,7 @@
 import SwiftUI
 
 extension View {
+    // Return a circle whose overlay is `self`
     func circle(foreground: Color = .white, background: Color = .blue) -> some View {
         Circle()
             .fill(background)
@@ -48,6 +49,13 @@ struct CircleModifier: ViewModifier {
     }
 }
 
+extension View {
+    func circleButton() -> some View {
+        self.modifier(CircleModifier())
+    }
+}
+
+
 struct CircleStyle: ButtonStyle {
     var foreground = Color.white
     var background = Color.blue
@@ -64,10 +72,17 @@ struct CircleStyle: ButtonStyle {
 struct ContentView: View {
     var body: some View {
         HStack {
-           Button(action: {}, label: { Text("One")})
-           Button(action: {}, label: { Text("Two")})
-           Button(action: {}, label: { Text("Three")})
-        }.buttonStyle(CircleStyle())
+            Text("Circle")
+                .circle()
+            CircleWrapper {
+                Text("Wrapper")
+            }
+
+            Text("Modifier")
+                .modifier(CircleModifier())
+           Button(action: {}, label: { Text("Style")})
+                .circleButton()
+        }
     }
 }
 
