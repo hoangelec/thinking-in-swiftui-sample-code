@@ -18,6 +18,7 @@ struct TextWithCircle: View {
     @State private var size: CGSize? = nil
     var body: some View {
         Text("Hello there")
+            .foregroundColor(.white)
             .fixedSize()
             .background(
                 GeometryReader { proxy in
