@@ -17,7 +17,7 @@ struct WidthKey: PreferenceKey {
 struct TextWithCircle: View {
     @State private var size: CGSize? = nil
     var body: some View {
-        Text("Hello there")
+        Text("Hello")
             .foregroundColor(.white)
             .fixedSize()
             .background(
@@ -28,7 +28,7 @@ struct TextWithCircle: View {
                 self.size = $0
             }
             .frame(width: size?.width, height: size?.height)
-            .padding()
+            .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15))
             .background(Capsule().fill(Color.blue))
     }
 }
