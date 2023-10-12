@@ -7,28 +7,28 @@
 
 import SwiftUI
 struct WidthKey: PreferenceKey {
-    static let defaultValue: CGFloat? = nil
-    static func reduce(value: inout CGFloat?,
-                       nextValue: () -> CGFloat?) {
+    static let defaultValue: CGSize? = nil
+    static func reduce(value: inout CGSize?,
+                       nextValue: () -> CGSize?) {
         value = value ?? nextValue()
     }
 }
 
 struct TextWithCircle: View {
-    @State private var width: CGFloat? = nil
+    @State private var size: CGSize? = nil
     var body: some View {
         Text("Hello there")
             .fixedSize()
             .background(
                 GeometryReader { proxy in
-                    Color.clear.preference(key: WidthKey.self, value: proxy.size.width) }
+                    Color.clear.preference(key: WidthKey.self, value: proxy.size) }
             )
             .onPreferenceChange(WidthKey.self) {
-                self.width = $0
+                self.size = $0
             }
-            .frame(width: width, height: width)
+            .frame(width: size?.width, height: size?.height)
             .padding()
-            .background(Circle().fill(Color.blue))
+            .background(Capsule().fill(Color.blue))
     }
 }
 
